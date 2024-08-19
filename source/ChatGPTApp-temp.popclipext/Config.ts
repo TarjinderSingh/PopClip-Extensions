@@ -1,9 +1,9 @@
 // #popclip
-// name: ChatGPT
-// identifier: com.tsingh.popclip.extension.chatgpt-app
+// name: ChatGPT Temp
+// identifier: com.tsingh.popclip-temp.extension.chatgpt-app
 // description: Send the text to the ChatGPT App.
 // popclip version: 4586
-// icon: square filled scale=85 iconify:simple-icons:openai
+// icon: square filled scale=85 iconify:ph:open-ai-logo-fill
 // app: { name: ChatGPT App, link: https://help.openai.com/en/articles/9275200-using-the-chatgpt-macos-app }
 // keywords: openai
 
@@ -40,6 +40,7 @@ export const action: ActionFunction<Options> = async (input, options) => {
     popclip.pressKey("command n");
     await util.sleep(800);
   }
+  popclip.pressKey("shift command n");
   popclip.pressKey("command v");
   popclip.pressKey("command up");
   popclip.pressKey("shift return");
